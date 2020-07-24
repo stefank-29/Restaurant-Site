@@ -80,13 +80,15 @@ nav li {
     cursor: pointer;
 
 }
-nav li:not(#logo-li):hover {
+nav li:not(#logo-li):hover, .active{
     background-color: rgba(0, 0, 0, 0.7);
     color: rgb(223, 223, 252);
     box-shadow: 0 3px 0px 0px red;
     padding-top: 1px;
    
 }
+
+
 
 nav #logo-li{
     padding: 0;

@@ -79,8 +79,6 @@ const renderHomePage = (() => {
         const yWalk = (y / height * walk) - (walk / 2);
         
         slogan.style.boxShadow = `${xWalk}px ${yWalk}px 2px 5px rgba(0, 0, 0, 0.2)`;
-        
-        console.log("asd");
     }
     
     body.addEventListener('mousemove', shadow);
