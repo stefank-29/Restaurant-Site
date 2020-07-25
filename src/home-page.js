@@ -28,7 +28,7 @@ const renderHomePage = (() => {
         const li2 = document.createElement('li');
         li2.textContent = 'Home';
         li2.setAttribute('id', 'home-li');
-        li2.addEventListener('click', renderHomePage.render);
+        //li2.addEventListener('click', renderHomePage.render);
         const li3 = document.createElement('li');
         li3.textContent = 'Menu';
         li3.setAttribute('id', 'menu-li');

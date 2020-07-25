@@ -1,4 +1,3 @@
-//TODO meni 
 //TODO scrollbar
 //TODO menu efekat za underline i za menu u meniju
 //TODO menu efekat za aktivni tab
