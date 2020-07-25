@@ -46,6 +46,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 #content{
@@ -127,6 +128,7 @@ nav #logo{
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 #menu{
@@ -179,7 +181,23 @@ nav #logo{
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    margin: 0 0 3rem
+    margin: 0 0 3rem;
+    animation: insertItem 0.7s linear  1  forwards;
+}
+
+@keyframes insertItem {
+    0%{
+        transform: translateY(50%);
+        opacity: 0.3;
+    }
+    50%{
+        transform: translateY(25%);
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .menu-item-header{
@@ -223,9 +241,6 @@ nav #logo{
     background: linear-gradient(transparent, rgb(197, 160, 91));
     border-radius: 5px;
 }
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px 3px red;
-  }
 
 /*************footer****************/
 footer div {
