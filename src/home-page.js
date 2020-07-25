@@ -1,3 +1,5 @@
+import {renderMenuPage} from './menu-page';
+
 const renderHomePage = (() => {
     // container
     const container = document.querySelector('#page-container');
@@ -9,7 +11,7 @@ const renderHomePage = (() => {
             child = container.lastChild;
         }
     }
-
+    
     const render = () => {
         _deletePage();
         
@@ -25,12 +27,19 @@ const renderHomePage = (() => {
         li1.appendChild(imgLogo);
         const li2 = document.createElement('li');
         li2.textContent = 'Home';
+        li2.setAttribute('id', 'home-li');
+        li2.addEventListener('click', renderHomePage.render);
         const li3 = document.createElement('li');
         li3.textContent = 'Menu';
+        li3.setAttribute('id', 'menu-li');
+        li3.addEventListener('click', renderMenuPage.render);
         const li4 = document.createElement('li');
         li4.textContent = 'About';
+        li4.setAttribute('id', 'about-li');
         const li5 = document.createElement('li');
         li5.textContent = 'Contact';
+        li5.setAttribute('id', 'contact-li');
+
         ul.appendChild(li1);
         ul.appendChild(li2);
         ul.appendChild(li3);
@@ -60,6 +69,8 @@ const renderHomePage = (() => {
         container.appendChild(footer);
         
     }
+
+
     const body = document.querySelector('body');
     const walk = 30;
     let xWalk;
@@ -82,6 +93,7 @@ const renderHomePage = (() => {
     }
     
     body.addEventListener('mousemove', shadow);
+
     return {
         render,
     }
