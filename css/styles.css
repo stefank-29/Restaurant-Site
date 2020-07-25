@@ -99,8 +99,6 @@ nav li:not(#logo-li):hover, .active{
    
 }
 
-
-
 nav #logo-li{
     padding: 0;
     margin: 0;
@@ -115,9 +113,9 @@ nav #logo{
     width: 12rem;
 }
 
-
 /***********menu****************/
 #menu-content{
+    overflow: auto; /*da raste*/
     position: relative;
     width: 65%;
     height: 100vh; /*mora ekspiciton da se navede da bi radio %*/ 
@@ -139,8 +137,7 @@ nav #logo{
     justify-content: start;
     justify-self: flex-start;
     margin: 0 1rem;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-color: red;
+    /* background-color: red; */
     border-radius: 5px;
 }
 
@@ -151,6 +148,7 @@ nav #logo{
     align-items: flex-end;
     justify-content: start;
     padding: 0rem 2rem 2rem;
+    margin-top: -2.5rem;
 }
 
 #menu li{
@@ -161,7 +159,8 @@ nav #logo{
     text-align: right;
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
-    
+    cursor: pointer;
+       
 }
 
 #menu-items{
@@ -170,16 +169,16 @@ nav #logo{
     margin: 0 3rem;
     padding: 0rem 5rem 3rem 0rem;
     /* background-color: blue; */
-    
     border-radius: 5px;
     color: whitesmoke;
-
+    
 }
 
 .menu-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 .menu-item-header{
