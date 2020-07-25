@@ -10,7 +10,7 @@ const renderMenuPage = (() => {
         }
     }
 
-    const render = (type) => {
+    const render = (type, flag) => {
         _deletePage();
 
          // nav menu
@@ -49,7 +49,10 @@ const renderMenuPage = (() => {
 
         //content
         const content = document.createElement('div');
-        content.setAttribute('id', 'menu-content');    
+        content.setAttribute('id', 'menu-content'); 
+        if(flag){ // ako sam presao na menu page
+            content.style.animation = `insertItem 0.5s linear  1  forwards`
+        }   
         
         //menu
         const menu = document.createElement('div');

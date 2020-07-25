@@ -1,4 +1,3 @@
-//TODO efekat za stavke u meniju kad ulaze
 //TODO efekat za hover menija
 //TODO about
 //TODO Contact (google maps)
