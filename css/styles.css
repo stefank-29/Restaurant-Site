@@ -118,7 +118,7 @@ nav #logo{
     overflow: auto; /*da raste*/
     position: relative;
     width: 65%;
-    height: 100vh; /*mora ekspiciton da se navede da bi radio %*/ 
+    height: 100vh; /*mora eksplicitno da se navede da bi radio %*/ 
     margin: 4rem auto 5rem;
     flex: 1;
     display: flex;
@@ -186,7 +186,7 @@ nav #logo{
     align-items: center;
     justify-content: space-between;
     color: rgb(197, 160, 91);
-    text-shadow: 0 0 2px whitesmoke;
+    text-shadow: 0 0 1px whitesmoke;
     font-family: 'Rowdies', cursive;
     border-bottom: 1px solid rgb(197, 160, 91);
     /* box-shadow: 0 2px 1px px rgb(197, 160, 91); */
