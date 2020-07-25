@@ -43,7 +43,7 @@ const renderHomePage = (() => {
         content.setAttribute('id', 'content');
         slogan = document.createElement('h1');
         slogan.setAttribute('id', 'slogan');
-        slogan.textContent = 'A tasty burger is what you deserve';
+        slogan.textContent = 'A TASTY BURGER IS WHAT YOU DESERVE';
         content.appendChild(slogan);
 
         // footer
