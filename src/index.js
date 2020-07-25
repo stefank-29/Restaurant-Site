@@ -1,6 +1,5 @@
-//TODO scrollbar
-//TODO menu efekat za underline i za menu u meniju
-//TODO menu efekat za aktivni tab
+//TODO efekat za stavke u meniju kad ulaze
+//TODO efekat za hover menija
 //TODO about
 //TODO Contact (google maps)
 //TODO Home page dodati jos nesto

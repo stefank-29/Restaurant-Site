@@ -44,7 +44,9 @@ const renderMenuPage = (() => {
          ul.appendChild(li4);
          ul.appendChild(li5);
          navMenu.appendChild(ul);
-    
+        
+       
+
         //content
         const content = document.createElement('div');
         content.setAttribute('id', 'menu-content');    
@@ -686,6 +688,7 @@ const renderMenuPage = (() => {
                   content.appendChild(menuItems);
         }
 
+
         // footer
         const footer = document.createElement('footer');
         const footerDiv = document.createElement('div');
@@ -698,6 +701,9 @@ const renderMenuPage = (() => {
         container.appendChild(navMenu);
         container.appendChild(content);
         container.appendChild(footer);
+        
+        li3.classList.add('active');
+      
         
     }
 

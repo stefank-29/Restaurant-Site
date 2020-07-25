@@ -12,8 +12,13 @@ const renderHomePage = (() => {
         }
     }
     
-    const render = () => {
+    function render(e){
+        // let elem;
+        // if(e !== undefined){ // ako je pocetni render
+        //    elem = event.target;
+        // }
         _deletePage();
+        
         
         // nav menu
         const navMenu = document.createElement('nav');
@@ -39,7 +44,8 @@ const renderHomePage = (() => {
         const li5 = document.createElement('li');
         li5.textContent = 'Contact';
         li5.setAttribute('id', 'contact-li');
-
+        
+        
         ul.appendChild(li1);
         ul.appendChild(li2);
         ul.appendChild(li3);
@@ -47,6 +53,8 @@ const renderHomePage = (() => {
         ul.appendChild(li5);
         navMenu.appendChild(ul);
         
+        
+
         // content
         const content = document.createElement('div');
         content.setAttribute('id', 'content');
@@ -68,6 +76,7 @@ const renderHomePage = (() => {
         container.appendChild(content);
         container.appendChild(footer);
         
+        li2.classList.add('active');
     }
 
 
