@@ -20,4 +20,4 @@ const home = document.querySelector("#home-li");
 home.addEventListener('click', renderHomePage.render);
 
 const menu = document.querySelector('#menu-li');
-menu.addEventListener('click', renderMenuPage.render);
+menu.addEventListener('click', function(){renderMenuPage.render('burgers')});
