@@ -64,9 +64,11 @@ const renderMenuPage = (() => {
         const menuItem3 = document.createElement('li');
         menuItem3.textContent = 'SALADS';
         menuItem3.setAttribute('id', 'salads');
+        menuItem3.addEventListener('click', function(){render('salads')})
         const menuItem4 = document.createElement('li');
-        menuItem4.textContent = 'DESSERTS';
-        menuItem4.setAttribute('id', 'desserts');
+        menuItem4.textContent = 'MINI ME';
+        menuItem4.setAttribute('id', 'minies');
+        menuItem4.addEventListener('click', function(){render('minies')})
 
         ulMenu.appendChild(menuItem1);
         ulMenu.appendChild(menuItem2);
@@ -482,7 +484,207 @@ const renderMenuPage = (() => {
               content.appendChild(menuItems);
               }
         
+        if(type === 'salads'){
+            const menuItems = document.createElement('div');
+                  menuItems.setAttribute('id', 'menu-items');
+                  // item 1
+                  const item1 = document.createElement('div');
+                  item1.classList.add('menu-item');
+                  const itemHeader1 = document.createElement('div');
+                  itemHeader1.classList.add('menu-item-header');
+      
+                  const name1 = document.createElement('h2');
+                  name1.classList.add('name');
+                  name1.textContent = 'MIXED GREENS';
+                  const price1 = document.createElement('span');
+                  price1.classList.add('price');
+                  price1.textContent = '9$';
+      
+                  itemHeader1.appendChild(name1);
+                  itemHeader1.appendChild(price1);
+      
+                  const itemDescription1 = document.createElement('div');
+                  itemDescription1.classList.add('menu-item-description');
+                  const p1 = document.createElement('p');
+                  p1.textContent = 'Carrots, Tomatoes, Cucumber, Croutons & Choice of: Citrus Vinaigrette (V), Ranch, or Blue Cheese Dressing';
+                  itemDescription1.appendChild(p1);
+      
+                  item1.appendChild(itemHeader1);
+                  item1.appendChild(itemDescription1);
+                  // item 2
+                  const item2 = document.createElement('div');
+                  item2.classList.add('menu-item');
+                  const itemHeader2 = document.createElement('div');
+                  itemHeader2.classList.add('menu-item-header');
+      
+                  const name2 = document.createElement('h2');
+                  name2.classList.add('name');
+                  name2.textContent = 'CRAFT COBB';
+                  const price2 = document.createElement('span');
+                  price2.classList.add('price');
+                  price2.textContent = '10$';
+      
+                  itemHeader2.appendChild(name2);
+                  itemHeader2.appendChild(price2);
+      
+                  const itemDescription2 = document.createElement('div');
+                  itemDescription2.classList.add('menu-item-description');
+                  const p2 = document.createElement('p');
+                  p2.innerHTML = 'Romaine, Carrots, Tomatoes, Cucumber, Egg, Bacon, Blue Cheese';
+                  itemDescription2.appendChild(p2);
+      
+                  item2.appendChild(itemHeader2);
+                  item2.appendChild(itemDescription2);
+                  //item 3
+                  const item3 = document.createElement('div');
+                  item3.classList.add('menu-item');
+                  const itemHeader3 = document.createElement('div');
+                  itemHeader3.classList.add('menu-item-header');
+      
+                  const name3 = document.createElement('h2');
+                  name3.classList.add('name');
+                  name3.textContent = 'CAESAR';
+                  const price3 = document.createElement('span');
+                  price3.classList.add('price');
+                  price3.textContent = '9$';
+      
+                  itemHeader3.appendChild(name3);
+                  itemHeader3.appendChild(price3);
+      
+                  const itemDescription3 = document.createElement('div');
+                  itemDescription3.classList.add('menu-item-description');
+                  const p3 = document.createElement('p');
+                  p3.textContent = 'Romaine, Shaved Parmesan, Croutons';
+                  itemDescription3.appendChild(p3);
+      
+                  item3.appendChild(itemHeader3);
+                  item3.appendChild(itemDescription3);
+                  //item 4
+                  
+                  const item4 = document.createElement('div');
+                  item4.classList.add('menu-item');
+                  const itemHeader4 = document.createElement('div');
+                  itemHeader4.classList.add('menu-item-header');
+      
+                  const name4 = document.createElement('h2');
+                  name4.classList.add('name');
+                  name4.textContent = 'ADD PROTEIN';
+                  
+      
+                  itemHeader4.appendChild(name4);
+      
+                  const itemDescription4 = document.createElement('div');
+                  itemDescription4.classList.add('menu-item-description');
+                  const p4 = document.createElement('p');
+                  const p5 = document.createElement('p');
+                  const p6 = document.createElement('p');
+                  p4.textContent = 'Grilled Chipotle Chicken – 4$';
+                  p5.textContent = 'Peppered Sirloin Steak – 5$';
+                  p6.textContent = 'Pork Belly – 5$';
+                  itemDescription4.appendChild(p4);
+                  itemDescription4.appendChild(p5);
+                  itemDescription4.appendChild(p6);
+                  p4.style.margin = '1rem 0rem 0rem';
+                  p5.style.margin = '0rem';
+                  p6.style.margin = '0rem';
+      
+                  item4.appendChild(itemHeader4);
+                  item4.appendChild(itemDescription4);
 
+           // -----------------------------------
+      
+                   menuItems.appendChild(item1);
+                   menuItems.appendChild(item2);
+                   menuItems.appendChild(item3);
+                   menuItems.appendChild(item4);
+                   
+                   
+       
+       
+           // -----------------------------------
+               content.appendChild(menu);
+               content.appendChild(menuItems);
+        }   
+        
+        if(type === 'minies'){
+            const menuItems = document.createElement('div');
+                  menuItems.setAttribute('id', 'menu-items');
+                  // item 1
+                  const item1 = document.createElement('div');
+                  item1.classList.add('menu-item');
+                  const itemHeader1 = document.createElement('div');
+                  itemHeader1.classList.add('menu-item-header');
+      
+                  const name1 = document.createElement('h2');
+                  name1.classList.add('name');
+                  name1.textContent = 'MINI BURGER W/ FRIES';
+                  const price1 = document.createElement('span');
+                  price1.classList.add('price');
+                  price1.textContent = '9$';
+      
+                  itemHeader1.appendChild(name1);
+                  itemHeader1.appendChild(price1);
+      
+                  const itemDescription1 = document.createElement('div');
+                  itemDescription1.classList.add('menu-item-description');
+                  const p1 = document.createElement('p');
+                  p1.textContent = 'Meat, Cheese, Potato Roll';
+                  itemDescription1.appendChild(p1);
+      
+                  item1.appendChild(itemHeader1);
+                  item1.appendChild(itemDescription1);
+                  // item 2
+                  const item2 = document.createElement('div');
+                  item2.classList.add('menu-item');
+                  const itemHeader2 = document.createElement('div');
+                  itemHeader2.classList.add('menu-item-header');
+      
+                  const name2 = document.createElement('h2');
+                  name2.classList.add('name');
+                  name2.textContent = 'GRILLED CHEESE W/ FRIES';
+                  const price2 = document.createElement('span');
+                  price2.classList.add('price');
+                  price2.textContent = '8$';
+      
+                  itemHeader2.appendChild(name2);
+                  itemHeader2.appendChild(price2);
+      
+                  const itemDescription2 = document.createElement('div');
+                  itemDescription2.classList.add('menu-item-description');
+                  const p2 = document.createElement('p');
+                  p2.innerHTML = 'American & Cheddar';
+                  itemDescription2.appendChild(p2);
+      
+                  item2.appendChild(itemHeader2);
+                  item2.appendChild(itemDescription2);
+                  //item 3
+                  const item3 = document.createElement('div');
+                  item3.classList.add('menu-item');
+                  const itemHeader3 = document.createElement('div');
+                  itemHeader3.classList.add('menu-item-header');
+      
+                  const name3 = document.createElement('h2');
+                  name3.classList.add('name');
+                  name3.textContent = 'MAC & CHEESE';
+                  const price3 = document.createElement('span');
+                  price3.classList.add('price');
+                  price3.textContent = '6$';
+      
+                  itemHeader3.appendChild(name3);
+                  itemHeader3.appendChild(price3);
+        
+                  item3.appendChild(itemHeader3);
+                // -----------------------------------
+      
+                   menuItems.appendChild(item1);
+                   menuItems.appendChild(item2);
+                   menuItems.appendChild(item3);
+                                                      
+         
+                // -----------------------------------
+                  content.appendChild(menu);
+                  content.appendChild(menuItems);
+        }
 
         // footer
         const footer = document.createElement('footer');

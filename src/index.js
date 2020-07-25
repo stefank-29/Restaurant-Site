@@ -13,11 +13,11 @@ import {renderMenuPage} from './menu-page';
 
 window.onload = renderHomePage.render();
 
-function a (){
+// function a (){
     
-}
-const home = document.querySelector("#home-li");
-home.addEventListener('click', renderHomePage.render);
+// }
+// const home = document.querySelector("#home-li");
+// home.addEventListener('click', renderHomePage.render);
 
-const menu = document.querySelector('#menu-li');
-menu.addEventListener('click', function(){renderMenuPage.render('burgers')});
+// const menu = document.querySelector('#menu-li');
+// menu.addEventListener('click', function(){renderMenuPage.render('burgers')});
