@@ -194,7 +194,7 @@ nav #logo{
 
 .menu-item-header .name{
     justify-self: start;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0.5rem 0;
     
 }
@@ -204,9 +204,10 @@ nav #logo{
 }
 
 .menu-item-description p{
-    margin: 1rem auto;
+    margin: 1rem 0;
     padding: 1rem 0;
-    font-size: 1.5rem;
+    width: 80%;
+    font-size: 2rem;
     color: #CCCCCC;
     font-family: 'Mulish', sans-serif;
     text-shadow: 0 0 3px rgb(156, 127, 73);
