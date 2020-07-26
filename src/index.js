@@ -1,5 +1,6 @@
 //TODO about
 //TODO Contact (google maps)
+//TODO google maps dark mode
 //TODO Home page dodati jos nesto
 //TODO ikonice za fejs, insta gore desno
 //TODO Favicon
