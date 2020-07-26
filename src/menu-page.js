@@ -82,6 +82,9 @@ const renderMenuPage = (() => {
 
         menu.appendChild(ulMenu);
         if(type === 'burgers'){
+            //
+            menuItem1.classList.add('activeTab');
+
             //menu items
             const menuItems = document.createElement('div');
             menuItems.setAttribute('id', 'menu-items');
@@ -100,12 +103,16 @@ const renderMenuPage = (() => {
 
             itemHeader1.appendChild(name1);
             itemHeader1.appendChild(price1);
+            //img
+            const img1 = document.createElement('img');
+            img1.setAttribute('src', '../images/burgers/burger1.jpg');
 
             const itemDescription1 = document.createElement('div');
             itemDescription1.classList.add('menu-item-description');
             const p1 = document.createElement('p');
             p1.textContent = 'Lettuce, Tomato, Pickles, American, Caramelized Onion, Fry Sauce';
             itemDescription1.appendChild(p1);
+            itemDescription1.appendChild(img1);
 
             item1.appendChild(itemHeader1);
             item1.appendChild(itemDescription1);
@@ -298,6 +305,8 @@ const renderMenuPage = (() => {
         }
 
         if(type === 'snacks'){
+                  menuItem2.classList.add('activeTab');      
+
                   //menu items
                   const menuItems = document.createElement('div');
                   menuItems.setAttribute('id', 'menu-items');
@@ -490,6 +499,8 @@ const renderMenuPage = (() => {
               }
         
         if(type === 'salads'){
+            menuItem3.classList.add('activeTab');      
+
             const menuItems = document.createElement('div');
                   menuItems.setAttribute('id', 'menu-items');
                   // item 1
@@ -612,6 +623,8 @@ const renderMenuPage = (() => {
         }   
         
         if(type === 'minies'){
+            menuItem4.classList.add('activeTab');      
+
             const menuItems = document.createElement('div');
                   menuItems.setAttribute('id', 'menu-items');
                   // item 1
@@ -706,10 +719,42 @@ const renderMenuPage = (() => {
         container.appendChild(footer);
         
         li3.classList.add('active');
-      
+
+        // event listeners
+        const items = document.querySelectorAll('.menu-item');
+        items.forEach(item => {
+        item.addEventListener('mousemove', function(){shadow(item)});
+    })
+
         
     }
-
+    
+    
+    
+    const walk = 1000;
+    let xWalk;
+    let yWalk;
+    function shadow(item) {   
+        // offseti
+         let width = item.offsetWidth;
+         let height = item.offsetHeight;
+         let x = event.offsetX;
+         let y = event.offsetY;
+         if(this !== event.target){
+            x += event.target.offsetLeft;
+            y += event.target.offsetTop;
+         }
+         //console.log(x, y);
+         
+        // walk je raspon
+          xWalk = Math.round((x / width * walk) - (walk / 2));
+          yWalk = Math.round((y / height * walk) - (walk / 2));
+         // console.log(xWalk, yWalk);
+         console.log('x:' + xWalk, 'y:' +yWalk);
+      //  item.style.boxShadow = `${xWalk}px ${yWalk}px 2px 5px red`;
+        let img = item.querySelector('img');
+        img.style.transform = `translateX(${xWalk/75+55}rem) translateY(${yWalk/75-15}rem)`;
+    }
 
     return{
         render,

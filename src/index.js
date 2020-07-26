@@ -1,4 +1,5 @@
-//TODO efekat za hover menija
+//TODO hover item slika
+//TODO click item slika
 //TODO about
 //TODO Contact (google maps)
 //TODO Home page dodati jos nesto
