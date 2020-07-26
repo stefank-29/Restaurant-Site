@@ -104,15 +104,18 @@ const renderMenuPage = (() => {
             itemHeader1.appendChild(name1);
             itemHeader1.appendChild(price1);
             //img
+            const imgDiv1 = document.createElement('div');
+            imgDiv1.classList.add('img-div');
             const img1 = document.createElement('img');
             img1.setAttribute('src', '../images/burgers/burger1.jpg');
+            imgDiv1.appendChild(img1);
 
             const itemDescription1 = document.createElement('div');
             itemDescription1.classList.add('menu-item-description');
             const p1 = document.createElement('p');
             p1.textContent = 'Lettuce, Tomato, Pickles, American, Caramelized Onion, Fry Sauce';
             itemDescription1.appendChild(p1);
-            itemDescription1.appendChild(img1);
+            itemDescription1.appendChild(imgDiv1);
 
             item1.appendChild(itemHeader1);
             item1.appendChild(itemDescription1);
@@ -807,18 +810,20 @@ const renderMenuPage = (() => {
         // event listeners
         const items = document.querySelectorAll('.menu-item');
         items.forEach(item => {
-        item.addEventListener('mousemove', function(){shadow(item)});
+            item.addEventListener('mousemove', function(){moveImg(item)});
+            item.addEventListener('click', showFullscreenImg);
     })
 
         
     }
+
     
     
     
     const walk = 1000;
     let xWalk;
     let yWalk;
-    function shadow(item) {   
+    function moveImg(item) {   
         // offseti
          let width = item.offsetWidth;
          let height = item.offsetHeight;
@@ -834,10 +839,28 @@ const renderMenuPage = (() => {
           xWalk = Math.round((x / width * walk) - (walk / 2));
           yWalk = Math.round((y / height * walk) - (walk / 2));
          // console.log(xWalk, yWalk);
-         console.log('x:' + xWalk, 'y:' +yWalk);
-      //  item.style.boxShadow = `${xWalk}px ${yWalk}px 2px 5px red`;
+         //console.log('x:' + xWalk, 'y:' +yWalk);
+        
         let img = item.querySelector('img');
         img.style.transform = `translateX(${xWalk/75+55}rem) translateY(${yWalk/75-18}rem)`;
+    }
+    function exitFullScreen() {
+        this.parentNode.removeChild(this);WebAuthnAssertion
+    }
+
+
+    function showFullscreenImg() {
+        let img = this.querySelector('img');
+        console.log(img.style.transform);
+        const fullScreenImg = document.createElement('img');
+        fullScreenImg.setAttribute('src', img.getAttribute('src')); 
+        fullScreenImg.style.transform = `${img.style.transform} scale(0.5)`;
+        
+        const div = document.createElement('div');
+        div.classList.add('show');
+        div.appendChild(fullScreenImg);
+        div.addEventListener('click', exitFullScreen);
+        container.appendChild(div);
     }
 
     return{
