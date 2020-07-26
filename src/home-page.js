@@ -25,7 +25,7 @@ const renderHomePage = (() => {
         navMenu.setAttribute('id', 'main-nav');
         const ul = document.createElement('ul');
         const imgLogo = document.createElement('img');
-        imgLogo.setAttribute('src', '/images/burger-logo2.jpg');
+        imgLogo.setAttribute('src', './images/burger-logo2.jpg');
         imgLogo.setAttribute('id', 'logo');
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
