@@ -1,4 +1,6 @@
 import {renderMenuPage} from './menu-page';
+import { renderAboutPage } from "./about-page";
+
 
 const renderHomePage = (() => {
     // container
@@ -41,6 +43,7 @@ const renderHomePage = (() => {
         const li4 = document.createElement('li');
         li4.textContent = 'About';
         li4.setAttribute('id', 'about-li');
+        li4.addEventListener('click', renderAboutPage.render)
         const li5 = document.createElement('li');
         li5.textContent = 'Contact';
         li5.setAttribute('id', 'contact-li');
