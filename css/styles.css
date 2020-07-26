@@ -26,15 +26,17 @@ h1{
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.6);
     /*box-shadow: 5px 5px 2px 5px rgba(0, 0, 0, 0.2);*/
-    animation: insert 0.8s linear 1 forwards;
+    animation: insert 0.7s linear 1 forwards;
 }
 
 @keyframes insert {
     0%{
-        transform: translateX(-100%) scale(0.7);
+        transform: translateX(-50%) scale(0.7);
+        opacity: 0.3;
     }
     100%{
         transform: translateX(0%) scale(1);
+        opacity: 1;
     }
 }   
 
@@ -165,6 +167,12 @@ nav #logo{
        
 }
 
+#menu li:hover, .active{
+    color: whitesmoke;
+    text-shadow: 0 0 5px rgb(197, 160, 91);
+    border-bottom: 1px solid #fc0000;
+}
+
 #menu-items{
     width: 60%;
     height: 80%;
@@ -180,9 +188,21 @@ nav #logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 3;
     cursor: pointer;
     margin: 0 0 3rem;
     animation: insertItem 0.7s linear  1  forwards;
+}
+.menu-item:hover .menu-item-header{
+    color: rgb(211, 156, 54);
+    text-shadow: 0 0 1px whitesmoke ;
+    border-bottom: 1px solid rgb(230, 115, 115);
+    
+}
+.menu-item:hover p{
+    color: whitesmoke;
+    text-shadow: 0 0 5px rgb(197, 160, 91) ;
+    
 }
 
 @keyframes insertItem {
