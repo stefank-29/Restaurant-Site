@@ -192,7 +192,7 @@ nav #logo{
     width: 60%;
     height: 80%;
     margin: 0 3rem;
-    padding: 0rem 5rem 3rem 0rem;
+    padding: 0rem 5rem 3rem 5rem;
     /* background-color: blue; */
     border-radius: 5px;
     color: whitesmoke;
@@ -205,7 +205,8 @@ nav #logo{
     justify-content: center;
     z-index: 3;
     cursor: pointer;
-    margin: 0 0 3rem;
+    padding-top: 2rem;
+    margin: 0 0 1rem;
     animation: insertItem 0.7s linear  1  forwards;
 }
 
