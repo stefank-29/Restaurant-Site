@@ -3,7 +3,7 @@ import {renderMenuPage} from './menu-page';
 const renderHomePage = (() => {
     // container
     const container = document.querySelector('#page-container');
-    let slogan;
+    let slogan = document.createElement('h1');
     const _deletePage = () => {
         let child = container.lastChild;
         while(child){
@@ -58,7 +58,7 @@ const renderHomePage = (() => {
         // content
         const content = document.createElement('div');
         content.setAttribute('id', 'content');
-        slogan = document.createElement('h1');
+       // slogan = document.createElement('h1');
         slogan.setAttribute('id', 'slogan');
         slogan.textContent = 'A TASTY BURGER IS WHAT YOU DESERVE';
         content.appendChild(slogan);
