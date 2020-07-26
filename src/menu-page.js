@@ -18,7 +18,7 @@ const renderMenuPage = (() => {
         navMenu.setAttribute('id', 'main-nav');
         const ul = document.createElement('ul');
         const imgLogo = document.createElement('img');
-        imgLogo.setAttribute('src', '/images/burger-logo2.jpg');
+        imgLogo.setAttribute('src', './images/burger-logo2.jpg');
         imgLogo.setAttribute('id', 'logo');
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
@@ -107,7 +107,7 @@ const renderMenuPage = (() => {
             const imgDiv1 = document.createElement('div');
             imgDiv1.classList.add('img-div');
             const img1 = document.createElement('img');
-            img1.setAttribute('src', '../images/burgers/burger1.jpg');
+            img1.setAttribute('src', './images/burgers/burger1.jpg');
             imgDiv1.appendChild(img1);
 
             const itemDescription1 = document.createElement('div');
@@ -136,7 +136,7 @@ const renderMenuPage = (() => {
             itemHeader2.appendChild(price2);
             //img
             const img2 = document.createElement('img');
-            img2.setAttribute('src', '../images/burgers/burger2.jpg');
+            img2.setAttribute('src', './images/burgers/burger2.jpg');
 
             const itemDescription2 = document.createElement('div');
             itemDescription2.classList.add('menu-item-description');
@@ -164,7 +164,7 @@ const renderMenuPage = (() => {
             itemHeader3.appendChild(price3);
             //img
             const img3 = document.createElement('img');
-            img3.setAttribute('src', '../images/burgers/burger3.jpg');
+            img3.setAttribute('src', './images/burgers/burger3.jpg');
 
             const itemDescription3 = document.createElement('div');
             itemDescription3.classList.add('menu-item-description');
@@ -194,7 +194,7 @@ const renderMenuPage = (() => {
             itemHeader4.appendChild(price4);
             //img
             const img4 = document.createElement('img');
-            img4.setAttribute('src', '../images/burgers/burger4.jpg');
+            img4.setAttribute('src', './images/burgers/burger4.jpg');
 
 
             const itemDescription4 = document.createElement('div');
@@ -223,7 +223,7 @@ const renderMenuPage = (() => {
             itemHeader5.appendChild(price5);
             //img
             const img5 = document.createElement('img');
-            img5.setAttribute('src', '../images/burgers/burger5.jpg');
+            img5.setAttribute('src', './images/burgers/burger5.jpg');
 
 
             const itemDescription5 = document.createElement('div');
@@ -252,7 +252,7 @@ const renderMenuPage = (() => {
             itemHeader6.appendChild(price6);
             //img
             const img6 = document.createElement('img');
-            img6.setAttribute('src', '../images/burgers/burger6.jpg');
+            img6.setAttribute('src', './images/burgers/burger6.jpg');
 
 
             const itemDescription6 = document.createElement('div');
@@ -281,7 +281,7 @@ const renderMenuPage = (() => {
             itemHeader7.appendChild(price7);
             //img
             const img7 = document.createElement('img');
-            img7.setAttribute('src', '../images/burgers/burger7.jpg');
+            img7.setAttribute('src', './images/burgers/burger7.jpg');
 
 
             const itemDescription7 = document.createElement('div');
@@ -311,7 +311,7 @@ const renderMenuPage = (() => {
             itemHeader8.appendChild(price8);
             //img
             const img8 = document.createElement('img');
-            img8.setAttribute('src', '../images/burgers/burger8.jpg');
+            img8.setAttribute('src', './images/burgers/burger8.jpg');
 
 
             const itemDescription8 = document.createElement('div');
@@ -363,7 +363,7 @@ const renderMenuPage = (() => {
                   itemHeader1.appendChild(name1);
                   itemHeader1.appendChild(price1);
                   const img1 = document.createElement('img');
-                  img1.setAttribute('src', '../images/snacks/snack1.jpg');
+                  img1.setAttribute('src', './images/snacks/snack1.jpg');
       
                   const itemDescription1 = document.createElement('div');
                   itemDescription1.classList.add('menu-item-description');
@@ -390,7 +390,7 @@ const renderMenuPage = (() => {
                   itemHeader2.appendChild(name2);
                   itemHeader2.appendChild(price2);
                   const img2 = document.createElement('img');
-                  img2.setAttribute('src', '../images/snacks/snack2.jpg');
+                  img2.setAttribute('src', './images/snacks/snack2.jpg');
       
                   const itemDescription2 = document.createElement('div');
                   itemDescription2.classList.add('menu-item-description');
@@ -417,7 +417,7 @@ const renderMenuPage = (() => {
                   itemHeader3.appendChild(name3);
                   itemHeader3.appendChild(price3);
                   const img3 = document.createElement('img');
-                  img3.setAttribute('src', '../images/snacks/snack3.jpg');
+                  img3.setAttribute('src', './images/snacks/snack3.jpg');
 
                   const itemDescription3 = document.createElement('div');
                   itemDescription3.classList.add('menu-item-description');
@@ -445,7 +445,7 @@ const renderMenuPage = (() => {
                   itemHeader4.appendChild(name4);
                   itemHeader4.appendChild(price4);
                   const img4 = document.createElement('img');
-                  img4.setAttribute('src', '../images/snacks/snack4.jpg');
+                  img4.setAttribute('src', './images/snacks/snack4.jpg');
       
                   const itemDescription4 = document.createElement('div');
                   itemDescription4.classList.add('menu-item-description');
@@ -472,7 +472,7 @@ const renderMenuPage = (() => {
                   itemHeader5.appendChild(name5);
                   itemHeader5.appendChild(price5);
                   const img5 = document.createElement('img');
-                  img5.setAttribute('src', '../images/snacks/snack5.jpg');
+                  img5.setAttribute('src', './images/snacks/snack5.jpg');
       
                   const itemDescription5 = document.createElement('div');
                   itemDescription5.classList.add('menu-item-description');
@@ -499,7 +499,7 @@ const renderMenuPage = (() => {
                   itemHeader6.appendChild(name6);
                   itemHeader6.appendChild(price6);
                   const img6 = document.createElement('img');
-                  img6.setAttribute('src', '../images/snacks/snack6.jpg');
+                  img6.setAttribute('src', './images/snacks/snack6.jpg');
       
                   const itemDescription6 = document.createElement('div');
                   itemDescription6.classList.add('menu-item-description');
@@ -526,7 +526,7 @@ const renderMenuPage = (() => {
                   itemHeader7.appendChild(name7);
                   itemHeader7.appendChild(price7);
                   const img7 = document.createElement('img');
-                  img7.setAttribute('src', '../images/snacks/snack7.jpg');
+                  img7.setAttribute('src', './images/snacks/snack7.jpg');
       
                   const itemDescription7 = document.createElement('div');
                   itemDescription7.classList.add('menu-item-description');
@@ -577,7 +577,7 @@ const renderMenuPage = (() => {
                   itemHeader1.appendChild(name1);
                   itemHeader1.appendChild(price1);
                   const img1 = document.createElement('img');
-                  img1.setAttribute('src', '../images/salads/salad1.jpg');
+                  img1.setAttribute('src', './images/salads/salad1.jpg');
       
                   const itemDescription1 = document.createElement('div');
                   itemDescription1.classList.add('menu-item-description');
@@ -604,7 +604,7 @@ const renderMenuPage = (() => {
                   itemHeader2.appendChild(name2);
                   itemHeader2.appendChild(price2);
                   const img2 = document.createElement('img');
-                  img2.setAttribute('src', '../images/salads/salad2.jpg');
+                  img2.setAttribute('src', './images/salads/salad2.jpg');
       
       
                   const itemDescription2 = document.createElement('div');
@@ -632,7 +632,7 @@ const renderMenuPage = (() => {
                   itemHeader3.appendChild(name3);
                   itemHeader3.appendChild(price3);
                   const img3 = document.createElement('img');
-                  img3.setAttribute('src', '../images/salads/salad3.jpg');
+                  img3.setAttribute('src', './images/salads/salad3.jpg');
       
       
                   const itemDescription3 = document.createElement('div');
@@ -712,7 +712,7 @@ const renderMenuPage = (() => {
                   itemHeader1.appendChild(name1);
                   itemHeader1.appendChild(price1);
                   const img1 = document.createElement('img');
-                  img1.setAttribute('src', '../images/minies/mini1.jpg');
+                  img1.setAttribute('src', './images/minies/mini1.jpg');
       
       
                   const itemDescription1 = document.createElement('div');
@@ -740,7 +740,7 @@ const renderMenuPage = (() => {
                   itemHeader2.appendChild(name2);
                   itemHeader2.appendChild(price2);
                   const img2 = document.createElement('img');
-                  img2.setAttribute('src', '../images/minies/mini2.jpg');
+                  img2.setAttribute('src', './images/minies/mini2.jpg');
       
                   const itemDescription2 = document.createElement('div');
                   itemDescription2.classList.add('menu-item-description');
@@ -767,7 +767,7 @@ const renderMenuPage = (() => {
                   itemHeader3.appendChild(name3);
                   itemHeader3.appendChild(price3);
                   const img3 = document.createElement('img');
-                  img3.setAttribute('src', '../images/minies/mini3.jpg');
+                  img3.setAttribute('src', './images/minies/mini3.jpg');
 
                   const itemDescription3 = document.createElement('div');
                   itemDescription3.classList.add('menu-item-description');
