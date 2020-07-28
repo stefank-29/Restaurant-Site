@@ -11,5 +11,5 @@
 import {renderHomePage} from './home-page';
 import {renderMenuPage} from './menu-page';
 
-//window.onload = renderHomePage.render(true);
+window.onload = renderHomePage.render(true);
 

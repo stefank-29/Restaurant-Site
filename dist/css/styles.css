@@ -366,6 +366,7 @@ nav #logo{
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
     animation : insertItem 0.5s linear  1  forwards; /*ovo zakomentarisati*/
+    
      
 }
 
@@ -387,15 +388,16 @@ nav #logo{
     left: 7rem;
     width: 52.5rem;
     height: 35rem;
-    z-index: -1;
+    z-index: 1;
     border-radius: 2px;
     box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
     animation: imgLeftInsert 0.8s linear 1 forwards;
+    cursor: pointer;
 }
-/* #kitchen:hover{
-    box-shadow: 0 0 10px 1px rgba(233, 107, 107, 0.7);
-    z-index: 3;
-} */
+#kitchen:hover{
+    box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+    z-index: 100;
+}
 
 #meal{
     position: absolute;
@@ -403,16 +405,17 @@ nav #logo{
     left: 22rem;
     width: 33rem;
     height: 43rem;
-    z-index: 1;
+    z-index: 2;
     border-radius: 2px;
     box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
     animation: imgBottomInsert 0.8s linear 1 forwards;
+    cursor: pointer;
 
 }
-/* #meal:hover {
+#meal:hover {
     z-index: 100;
-    box-shadow: 0 0 10px 1px rgba(233, 107, 107, 0.7);
-} */
+    box-shadow: 0 0 10px 1px rgba(197, 160, 91, 0.75);
+}
 
 /*******animation img***********/
 
@@ -454,7 +457,7 @@ nav #logo{
     justify-content: start;
     margin: auto 2rem;
     padding: 0rem 3rem 2rem;
-    z-index: 2;
+    z-index: 3;
     margin-right: -1rem;
     /* background-color: blue; */
 }
@@ -481,9 +484,13 @@ nav #logo{
     color: rgb(197, 160, 91);
     text-shadow: 0 0 1px whitesmoke;
     font-family: 'Rowdies', cursive;
-    border-bottom: 3px solid rgb(197, 160, 91);
-    
-    
+    border-bottom: 3px solid rgb(197, 160, 91);   
+}
+#about-text h2:hover{
+    color: rgb(218, 156, 42);
+    text-shadow: 0 0 1px whitesmoke ;
+    border-bottom: 2px solid rgb(230, 115, 115);
+    cursor: default;
 }
 .name {
     color: rgb(197, 160, 91);
@@ -498,6 +505,9 @@ nav #logo{
     text-shadow: 0 0 2px rgb(197, 160, 91);
     animation: insertItem 0.7s linear 1 forwards;
 
+}
+#about-text p:hover{
+    cursor: default;
 }
 
 

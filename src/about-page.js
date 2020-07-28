@@ -3,6 +3,7 @@ import { renderHomePage } from "./home-page";
 
 const renderAboutPage = (() => {
     const container = document.querySelector('#page-container');
+
     const _deletePage = () => {
         let child = container.lastChild;
         while(child){
@@ -11,7 +12,7 @@ const renderAboutPage = (() => {
         }
     }
 
-    const render = () => {
+    const render = (flag) => {
         _deletePage();
 
         // nav menu
@@ -48,10 +49,12 @@ const renderAboutPage = (() => {
          navMenu.appendChild(ul);
         
          const content = document.createElement('div');
-         content.setAttribute('id', 'about-content'); 
+         content.setAttribute('id', 'about-content');
+
          if(flag){ // ako sam presao na about page
              content.style.animation = `insertItem 0.5s linear  1  forwards`
-         }   
+         }  
+
          // about images
          const aboutImages = document.createElement('div');
          aboutImages.setAttribute('id', 'about-img');
@@ -75,7 +78,47 @@ const renderAboutPage = (() => {
          h2.textContent = 'ABOUT US';
          const imgDiv = document.createElement('div');
          imgDiv.setAttribute('id', 'logo');
-         
+         const imgLogo2 = document.createElement('img');
+         imgLogo2.setAttribute('src', './images/burger-logo-bg.jpg');
+         imgLogo2.setAttribute('alt', 'restauran logo');
+         imgDiv.appendChild(imgLogo2);
+
+         aboutHeader.appendChild(h2);
+         aboutHeader.appendChild(imgDiv);
+
+         const p1 = document.createElement('p');
+         p1.innerHTML = `When we opened <strong class="name">Burger cafe</strong> in June 2017, our vision was to create an unassuming watering hole for the locals. In a town with endless options for bars and lounges, we found it challenging to find a friendly bar with a solid craft beer list, good food, and non-gaming/non-smoking. We wanted to provide friends and neighbors alike with the original form of social networking; a fun easy going bar, and a cold pint. Our staunch belief in providing exceptional quality products with friendly service in a clean and welcoming setting has helped us earn the reputation among the locals as one of the best hidden gems in Las Vegas.`
+         const p2 = document.createElement('p');
+         p2.innerHTML = `<strong class="name">Burger cafe</strong> is a culmination of giving our best to the community through our food, service, and atmosphere. Tucked inside one of the premier breweries in Nevada, this collaboration project allows us another opportunity to create a memorable setting for you to catch up with friends and make new ones over tasty bites and a refreshing beer.`;
+
+         aboutText.appendChild(aboutHeader);
+         aboutText.appendChild(p1);
+         aboutText.appendChild(p2);
+
+         content.appendChild(aboutImages);
+         content.appendChild(aboutText);
+
+         // footer
+        const footer = document.createElement('footer');
+        const footerDiv = document.createElement('div');
+        footerDiv.innerHTML = `Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script>&nbsp;&nbsp;Created by Stefan Karaferovic
+        | <i class="fab fa-github"></i> <a href="https://github.com/stefank-29" target="_blank">stefank-29</a>`;
+        footer.appendChild(footerDiv);
+
+        
+         // append
+         container.appendChild(navMenu);
+         container.appendChild(content);
+         container.appendChild(footer);
+
+         li4.classList.add('active');
+
+         const kitchen = document.querySelector('#kitchen');
+         const meal = document.querySelector('#meal');
+         kitchen.addEventListener('click', showFullscreenImg);
+         meal.addEventListener('click', showFullscreenImg);
+         kitchen.addEventListener('mouseover', moveImg)
     }
 
 
@@ -85,11 +128,15 @@ const renderAboutPage = (() => {
 
 
     function showFullscreenImg() {
-        let img = this.querySelector('img');
+        let img = this;
        //console.log(img.style.transform);
         const fullScreenImg = document.createElement('img');
         fullScreenImg.setAttribute('src', img.getAttribute('src')); 
-        fullScreenImg.style.transform = `${img.style.transform} scale(0.5)`;
+        if(img.getAttribute('id') === 'meal'){
+            fullScreenImg.style.width = '42rem';
+            fullScreenImg.style.height = '55rem';
+        }
+        fullScreenImg.style.transform = `scale(0.5)`;
         
         const div = document.createElement('div');
         div.classList.add('show');
@@ -97,6 +144,7 @@ const renderAboutPage = (() => {
         div.addEventListener('click', exitFullScreen);
         container.appendChild(div);
     }
+
 
     return {
         render,
