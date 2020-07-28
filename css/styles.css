@@ -124,6 +124,7 @@ nav #logo-li:hover{
 nav #logo{
     height: 7rem;
     width: 12rem;
+    
 }
 
 @keyframes navAnimation {
@@ -148,7 +149,7 @@ nav #logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
     
@@ -287,6 +288,9 @@ nav #logo{
     border-bottom: 1px solid rgb(230, 115, 115);
     
 }
+.menu-item:hover h2{
+    color: rgb(218, 156, 42);
+}
 .menu-item:hover p, .menu-item:hover .price{
     color: whitesmoke;
     text-shadow: 0 0 5px rgb(197, 160, 91) ;
@@ -385,13 +389,13 @@ nav #logo{
 #kitchen {
     position: absolute;
     top: 7rem;
-    left: 7rem;
+    right: 7rem;
     width: 52.5rem;
     height: 35rem;
     z-index: 1;
     border-radius: 2px;
     box-shadow: 0 0 7px 1px rgba(197, 160, 91, 0.5);
-    animation: imgLeftInsert 0.8s linear 1 forwards;
+    animation: imgRightInsert 0.8s linear 1 forwards;
     cursor: pointer;
 }
 #kitchen:hover{
@@ -402,7 +406,7 @@ nav #logo{
 #meal{
     position: absolute;
     top: 34rem;
-    left: 22rem;
+    right: 20rem;
     width: 33rem;
     height: 43rem;
     z-index: 2;
@@ -419,9 +423,9 @@ nav #logo{
 
 /*******animation img***********/
 
-@keyframes imgLeftInsert{
+@keyframes imgRightInsert{
     0%{
-        transform: translateX(-50%) scale(0.5);
+        transform: translateX(50%) scale(0.5);
         opacity: 0.5;
     }
     100%{
@@ -472,10 +476,12 @@ nav #logo{
 }
 
 #logo img{
+    display: block;
     margin: auto;
     width: 21.5rem;
     height: 15.5rem;
     flex: 1;
+    transition: all 0.5s;
 }
 
 #about-text h2{
@@ -510,7 +516,121 @@ nav #logo{
     cursor: default;
 }
 
+/************contact****************/
+#contact-content{
+    position: relative;
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3rem;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    margin: 4rem auto 5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    height: 80%;
+    width: 30%;
+    /* background-color: rgb(91, 91, 207); */
+    margin-left: 1rem;
+    
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    margin-bottom: 2rem;
+}
+#message{
+    margin-bottom: 0rem;
+}
+.icon{
+    margin: 1rem;
+    align-self: flex-start;
+}
+.icon img{
+    width: 1.6rem;
+    height: 1.6rem;
+    
+}
+#contact-info h2{
+    font-size: 3rem;
+    font-family: 'Rowdies', cursive;
+    color: rgb(197, 160, 91);
+    text-shadow: 0 0 1px whitesmoke;
+    border-bottom: 2px solid rgb(197, 160, 91);    
+    margin-left: 3.5rem;
+}
 
+#contact-info h3{
+    font-size: 2rem;
+    font-family: 'Rowdies', cursive;
+    color: rgb(197, 160, 91);
+    text-shadow: 0 0 1px whitesmoke;
+    border-bottom: 1px solid rgb(197, 160, 91);
+    margin: 0.5rem 0.5rem 2rem;
+}
+
+#contact-info p{
+    font-size: 1.7rem;
+    font-family: 'Mulish', sans-serif;  
+    color: whitesmoke;
+    text-shadow: 0 0 2px rgb(197, 160, 91);
+    margin: 0.5rem 0.5rem 2rem;
+}
+
+#email-sender form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    padding-left: 1rem;
+}
+#email-sender form *{
+    padding: 0.5rem 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Mulish', sans-serif;  
+    color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: none;
+    outline: none;
+    resize: none;
+}
+#email-sender #send{
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(197, 160, 91);
+    border: 1px solid rgb(197, 160, 91);
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.5s;
+}
+#email-sender #send:hover{
+    background-color: rgb(197, 160, 91);
+    color: rgb(22, 18, 18);
+}
+
+#contact-maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 60%;
+    background-color: red;
+}
 
 /*************footer****************/
 footer div {
