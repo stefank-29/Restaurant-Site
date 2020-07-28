@@ -1,4 +1,4 @@
-//TODO about (slike koje se preklapaju sa tekstom) + flag
+//TODO about hover img svih
 //TODO Contact (google maps)
 //TODO google maps dark
 //TODO email sender
@@ -11,5 +11,5 @@
 import {renderHomePage} from './home-page';
 import {renderMenuPage} from './menu-page';
 
-window.onload = renderHomePage.render();
+//window.onload = renderHomePage.render(true);
 

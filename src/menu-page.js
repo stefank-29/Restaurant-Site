@@ -852,7 +852,7 @@ const renderMenuPage = (() => {
 
     function showFullscreenImg() {
         let img = this.querySelector('img');
-        console.log(img.style.transform);
+       //console.log(img.style.transform);
         const fullScreenImg = document.createElement('img');
         fullScreenImg.setAttribute('src', img.getAttribute('src')); 
         fullScreenImg.style.transform = `${img.style.transform} scale(0.5)`;

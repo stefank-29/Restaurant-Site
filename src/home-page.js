@@ -14,13 +14,14 @@ const renderHomePage = (() => {
         }
     }
     
-    function render(e){
+    function render(flag){
         // let elem;
         // if(e !== undefined){ // ako je pocetni render
         //    elem = event.target;
         // }
         _deletePage();
         
+       
         
         // nav menu
         const navMenu = document.createElement('nav');
@@ -56,6 +57,9 @@ const renderHomePage = (() => {
         ul.appendChild(li5);
         navMenu.appendChild(ul);
         
+        if(flag){
+         navMenu.style.animation = `navAnimation 0.7s linear 1 forwards` ;  
+        }
         
 
         // content
