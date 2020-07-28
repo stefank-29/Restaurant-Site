@@ -1,5 +1,7 @@
 import { renderHomePage } from "./home-page";
 import { renderAboutPage } from "./about-page";
+import {renderContactPage} from './contact-page';
+
 const renderMenuPage = (() => {
     const container = document.querySelector('#page-container');
     const _deletePage = () => {
@@ -38,6 +40,8 @@ const renderMenuPage = (() => {
         const li5 = document.createElement('li');
         li5.textContent = 'Contact';
         li5.setAttribute('id', 'contact-li');
+        li5.addEventListener('click', renderContactPage.render);
+
 
          ul.appendChild(li1);
          ul.appendChild(li2);

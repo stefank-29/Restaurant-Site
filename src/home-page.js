@@ -1,6 +1,6 @@
 import {renderMenuPage} from './menu-page';
 import { renderAboutPage } from "./about-page";
-
+import {renderContactPage} from './contact-page';
 
 const renderHomePage = (() => {
     // container
@@ -49,7 +49,7 @@ const renderHomePage = (() => {
         const li5 = document.createElement('li');
         li5.textContent = 'Contact';
         li5.setAttribute('id', 'contact-li');
-        
+        li5.addEventListener('click', renderContactPage.render);
         
         ul.appendChild(li1);
         ul.appendChild(li2);

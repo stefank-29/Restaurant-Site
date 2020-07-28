@@ -1,6 +1,5 @@
-//TODO Contact 
 //TODO google maps dark
-//TODO email sender
+//TODO reset forme
 //TODO Home page dodati jos nesto (lokacija, radno vreme, ime restorana)
 //TODO ikonice za fejs, insta gore desno
 
@@ -9,5 +8,5 @@
 
 import {renderHomePage} from './home-page';
 
-//window.onload = renderHomePage.render(true);
+window.onload = renderHomePage.render(true);
 
