@@ -14,7 +14,7 @@ const renderHomePage = (() => {
         }
     }
     
-    function render(flag){
+    function render(onload){
         // let elem;
         // if(e !== undefined){ // ako je pocetni render
         //    elem = event.target;
@@ -28,7 +28,8 @@ const renderHomePage = (() => {
         navMenu.setAttribute('id', 'main-nav');
         const ul = document.createElement('ul');
         const imgLogo = document.createElement('img');
-        imgLogo.setAttribute('src', './images/burger-logo2.jpg');
+        imgLogo.setAttribute('src', './images/burger-logo-bg.jpg');
+
         imgLogo.setAttribute('id', 'logo');
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
@@ -57,7 +58,7 @@ const renderHomePage = (() => {
         ul.appendChild(li5);
         navMenu.appendChild(ul);
         
-        if(flag){
+        if(onload){
          navMenu.style.animation = `navAnimation 0.7s linear 1 forwards` ;  
         }
         

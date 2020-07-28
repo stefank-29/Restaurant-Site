@@ -1,5 +1,4 @@
-//TODO about hover img svih
-//TODO Contact (google maps)
+//TODO Contact 
 //TODO google maps dark
 //TODO email sender
 //TODO Home page dodati jos nesto (lokacija, radno vreme, ime restorana)
@@ -9,7 +8,6 @@
 
 
 import {renderHomePage} from './home-page';
-import {renderMenuPage} from './menu-page';
 
-window.onload = renderHomePage.render(true);
+//window.onload = renderHomePage.render(true);
 

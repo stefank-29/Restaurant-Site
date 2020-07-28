@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
-  <title>Restaurant</title>
+  <title>Burger cafe</title>
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="icon" type="image/png"  href="./images/burger-favicon.png">
@@ -19,7 +19,7 @@
 <body>
 
     <div id="page-container">
-         <!-- <nav id="main-nav">
+         <nav id="main-nav">
             <ul>
                 <li id="logo-li"><img id="logo" src="./images/burger-logo2.jpg" alt=""></li>
                 <li>Home</li>
@@ -30,19 +30,42 @@
             </ul>
 
         </nav>
-        <div id="about-content">
-             <div id="about-img">
-                <img src="./images/about-page/top3.png" id="kitchen" alt="burger making in kitchen">
-                <img src="./images/about-page/burger8.jpg" id="meal" alt="burger image">
-                
-             </div>
-             <div id="about-text">
-                <div id="header">
-                    <h2>ABOUT US</h2>
-                    <div id="logo"><img src="./images/burger-logo-bg.jpg" alt="restaurant logo"></div>
+        <div id="contact-content">
+             <div id="contact-info">
+               <h2>CONTACT</h2>
+                <div class="contact-item">
+                    <span class="icon"><img src="./images/contact-page/pin.svg" alt="pin icon"></span>
+                    <p>1510 South Main Street<br>
+                        Las Vegas, NV 89104 <br>
+                        Located in Able Baker Brewing
+                    </p>
                 </div>
-                <p>When we opened <strong class="name">Burger cafe</strong> in June 2017, our vision was to create an unassuming watering hole for the locals. In a town with endless options for bars and lounges, we found it challenging to find a friendly bar with a solid craft beer list, good food, and non-gaming/non-smoking. We wanted to provide friends and neighbors alike with the original form of social networking; a fun easy going bar, and a cold pint. Our staunch belief in providing exceptional quality products with friendly service in a clean and welcoming setting has helped us earn the reputation among the locals as one of the best hidden gems in Las Vegas.</p>
-                <p><strong class="name">Burger cafe</strong> is a culmination of giving our best to the community through our food, service, and atmosphere. Tucked inside one of the premier breweries in Nevada, this collaboration project allows us another opportunity to create a memorable setting for you to catch up with friends and make new ones over tasty bites and a refreshing beer.</p>
+                <div class="contact-item">
+                    <span class="icon"><img src="./images/contact-page/clock2.svg" alt="clock icon"></span>
+                    <p><strong class="name">Sun-Thurs:</strong> 12pm-9pm <br>
+                        <strong class="name">Fri-Sat:</strong> 12pm-11pm <br>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"><img src="./images/contact-page/phone.svg" alt="phone icon"></span>
+                    <p>555.236.515</p>
+                </div>
+                <div class="contact-item" id="message" >
+                    <span class="icon"><img src="./images/contact-page/mail.svg" alt="message icon"></span>
+                    <h3>MESSAGE US</h3>
+                </div>
+                <div id="email-sender">
+                    <form action="mailto:stefankaraferovic@gmail.com"  method="post" enctype="text/plain">
+                        <input type="text" id='name' size="25" placeholder="Name">
+                        <input type="text" id='number' size="25" placeholder="Phone Number">
+                        <input type="text" id='addess' size="25" placeholder="Email Address">
+                        <textarea name="message" id="message" cols="25" rows="5" placeholder="Message" resize="none"></textarea>
+                        <input type="submit" value="Send message" id="send">
+                    </form>
+                </div>
+             </div>
+             <div id="contact-maps">
+                
              </div>
             
         </div>
@@ -53,7 +76,7 @@
                 <script>document.write(new Date().getFullYear());</script>&nbsp;&nbsp;Created by Stefan Karaferovic
                 | <i class="fab fa-github"></i> <a href="https://github.com/stefank-29" target="_blank">stefank-29</a>
             </div>
-        </footer>  -->
+        </footer> 
     
     </div> 
 

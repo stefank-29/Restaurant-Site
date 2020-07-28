@@ -18,7 +18,7 @@ const renderMenuPage = (() => {
         navMenu.setAttribute('id', 'main-nav');
         const ul = document.createElement('ul');
         const imgLogo = document.createElement('img');
-        imgLogo.setAttribute('src', './images/burger-logo2.jpg');
+        imgLogo.setAttribute('src', './images/burger-logo-bg.jpg');
         imgLogo.setAttribute('id', 'logo');
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
@@ -846,13 +846,13 @@ const renderMenuPage = (() => {
         img.style.transform = `translateX(${xWalk/75+55}rem) translateY(${yWalk/75-18}rem)`;
     }
     function exitFullScreen() {
-        this.parentNode.removeChild(this);WebAuthnAssertion
+        this.parentNode.removeChild(this);
     }
 
 
     function showFullscreenImg() {
         let img = this.querySelector('img');
-       //console.log(img.style.transform);
+       // console.log(img.style.transform);
         const fullScreenImg = document.createElement('img');
         fullScreenImg.setAttribute('src', img.getAttribute('src')); 
         fullScreenImg.style.transform = `${img.style.transform} scale(0.5)`;

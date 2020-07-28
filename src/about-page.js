@@ -20,8 +20,9 @@ const renderAboutPage = (() => {
         navMenu.setAttribute('id', 'main-nav');
         const ul = document.createElement('ul');
         const imgLogo = document.createElement('img');
-        imgLogo.setAttribute('src', './images/burger-logo2.jpg');
+        imgLogo.setAttribute('src', './images/burger-logo-bg.jpg');
         imgLogo.setAttribute('id', 'logo');
+
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
         li1.appendChild(imgLogo);
@@ -47,6 +48,8 @@ const renderAboutPage = (() => {
          ul.appendChild(li4);
          ul.appendChild(li5);
          navMenu.appendChild(ul);
+
+         // *******************************
         
          const content = document.createElement('div');
          content.setAttribute('id', 'about-content');
@@ -81,6 +84,9 @@ const renderAboutPage = (() => {
          const imgLogo2 = document.createElement('img');
          imgLogo2.setAttribute('src', './images/burger-logo-bg.jpg');
          imgLogo2.setAttribute('alt', 'restauran logo');
+         imgLogo2.addEventListener('mouseover', changeLogoImg);
+         imgLogo2.addEventListener('mouseleave', changeLogoImg2);
+
          imgDiv.appendChild(imgLogo2);
 
          aboutHeader.appendChild(h2);
@@ -95,8 +101,9 @@ const renderAboutPage = (() => {
          aboutText.appendChild(p1);
          aboutText.appendChild(p2);
 
-         content.appendChild(aboutImages);
          content.appendChild(aboutText);
+         content.appendChild(aboutImages);
+
 
          // footer
         const footer = document.createElement('footer');
@@ -118,9 +125,18 @@ const renderAboutPage = (() => {
          const meal = document.querySelector('#meal');
          kitchen.addEventListener('click', showFullscreenImg);
          meal.addEventListener('click', showFullscreenImg);
-         kitchen.addEventListener('mouseover', moveImg)
     }
 
+    function changeLogoImg() {
+       this.setAttribute('src', './images/about-page/burger-hover-img.png');
+       this.style.transform = `scale(1.2)`
+    }
+
+    function changeLogoImg2() {
+        this.setAttribute('src', './images/burger-logo-bg.jpg');
+        this.style.transform = `scale(1)`
+     }
+   
 
     function exitFullScreen() {
         this.parentNode.removeChild(this);
