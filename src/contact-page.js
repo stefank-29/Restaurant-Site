@@ -27,6 +27,7 @@ const renderContactPage = (() => {
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
         li1.appendChild(imgLogo);
+        li1.addEventListener('click', renderHomePage.render);
         const li2 = document.createElement('li');
         li2.textContent = 'Home';
         li2.setAttribute('id', 'home-li');
@@ -49,8 +50,38 @@ const renderContactPage = (() => {
          ul.appendChild(li3);
          ul.appendChild(li4);
          ul.appendChild(li5);
-         navMenu.appendChild(ul);
 
+
+         const social = document.createElement('div');
+         social.setAttribute('id', 'social');
+         const a1 = document.createElement('a');
+         a1.setAttribute('href', 'https://www.instagram.com/explore/tags/food/?hl=en');
+         a1.setAttribute('target', '_blank');
+         const insta = document.createElement('img');
+         insta.setAttribute('src', './images/instagraM.svg');
+         insta.setAttribute('alt', 'instagram logo');
+         a1.appendChild(insta);
+         const a2 = document.createElement('a');
+         a2.setAttribute('href', 'https://www.facebook.com/');
+         a2.setAttribute('target', '_blank');
+         const face = document.createElement('img');
+         face.setAttribute('src', './images/facebook.svg');
+         face.setAttribute('alt', 'facebook logo');
+         a2.appendChild(face);
+         const a3 = document.createElement('a');
+         a3.setAttribute('href', 'tel:555.236.515');
+         const btnNumber = document.createElement('button');
+         btnNumber.setAttribute('id', 'numberMenu');
+         btnNumber.textContent = '555.236.515';
+         a3.appendChild(btnNumber);
+         social.appendChild(a1);
+         social.appendChild(a2);
+         social.appendChild(a3);
+
+
+         navMenu.appendChild(ul);
+         navMenu.appendChild(social);
+       
          const content = document.createElement('div');
          content.setAttribute('id', 'contact-content');
 
@@ -90,6 +121,8 @@ const renderContactPage = (() => {
          //item 3
          const item3 = document.createElement('div');
          item3.classList.add('contact-item');
+         const a = document.createElement('a');
+         a.setAttribute('href', 'tel:555.236.515');
          const span3 = document.createElement('span');
          span3.classList.add('icon');
          const img3 = document.createElement('img');
@@ -97,9 +130,11 @@ const renderContactPage = (() => {
          img3.setAttribute('alt', 'phone icon');
          span3.appendChild(img3);
          const p3 = document.createElement('p');
+         p3.setAttribute('id', 'numberFont');
          p3.textContent = `555.236.515`;
+         a.appendChild(p3);
          item3.appendChild(span3);
-         item3.appendChild(p3);
+         item3.appendChild(a);
          //item 4
          const item4 = document.createElement('div');
          item4.classList.add('contact-item');
@@ -141,7 +176,7 @@ const renderContactPage = (() => {
          textarea.setAttribute('name', 'message');
          textarea.setAttribute('id', 'message');
          textarea.setAttribute('cols', '25');
-         textarea.setAttribute('rows', '5');
+         textarea.setAttribute('rows', '4');
          textarea.setAttribute('placeholder', 'Message');
          textarea.setAttribute('resize', 'none');
          
@@ -153,7 +188,7 @@ const renderContactPage = (() => {
 
          form.appendChild(input1);
          form.appendChild(input2);
-         form.appendChild(input1);
+         form.appendChild(input3);
          form.appendChild(textarea);
          form.appendChild(input4);
          

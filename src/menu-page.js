@@ -25,6 +25,7 @@ const renderMenuPage = (() => {
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
         li1.appendChild(imgLogo);
+        li1.addEventListener('click', renderHomePage.render);
         const li2 = document.createElement('li');
         li2.textContent = 'Home';
         li2.setAttribute('id', 'home-li');
@@ -48,8 +49,36 @@ const renderMenuPage = (() => {
          ul.appendChild(li3);
          ul.appendChild(li4);
          ul.appendChild(li5);
+
+         const social = document.createElement('div');
+         social.setAttribute('id', 'social');
+         const a1 = document.createElement('a');
+         a1.setAttribute('href', 'https://www.instagram.com/explore/tags/food/?hl=en');
+         a1.setAttribute('target', '_blank');
+         const insta = document.createElement('img');
+         insta.setAttribute('src', './images/instagraM.svg');
+         insta.setAttribute('alt', 'instagram logo');
+         a1.appendChild(insta);
+         const a2 = document.createElement('a');
+         a2.setAttribute('href', 'https://www.facebook.com/');
+         a2.setAttribute('target', '_blank');
+         const face = document.createElement('img');
+         face.setAttribute('src', './images/facebook.svg');
+         face.setAttribute('alt', 'facebook logo');
+         a2.appendChild(face);
+         const a3 = document.createElement('a');
+         a3.setAttribute('href', 'tel:555.236.515');
+         const btnNumber = document.createElement('button');
+         btnNumber.setAttribute('id', 'numberMenu');
+         btnNumber.textContent = '555.236.515';
+         a3.appendChild(btnNumber);
+         social.appendChild(a1);
+         social.appendChild(a2);
+         social.appendChild(a3);
+
+
          navMenu.appendChild(ul);
-        
+         navMenu.appendChild(social);
        
 
         //content

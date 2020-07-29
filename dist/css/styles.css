@@ -65,6 +65,53 @@ h1{
 
 
 /************nav*********************/
+#main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#social{
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#social img{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: auto 1rem;
+}
+#social img:hover{
+    transform: scale(1.15);
+}
+#numberMenu{
+    padding: 1rem;
+    margin: auto 1rem;
+    font-size: 2rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    color: rgb(197, 160, 91);
+    background-color: transparent;
+    border: 1px solid rgb(197, 160, 91);
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+}
+#numberMenu:hover{
+    color: rgb(22, 18, 18);
+    background-color: rgb(197, 160, 91);
+    /* border: 1px solid rgb(22, 18, 18); */
+}
+.fa-facebook-f{
+    color: rgb(197, 160, 91);
+}
+.fa-facebook-f:hover{
+    text-shadow: 0 0 5px 5px rgb(197, 160, 91);
+}
 
 nav{
     position: relative;
@@ -496,6 +543,7 @@ nav #logo{
     cursor: default;
 }
 .name {
+
     color: rgb(197, 160, 91);
 }
 
@@ -588,6 +636,14 @@ nav #logo{
     text-shadow: 0 0 2px rgb(197, 160, 91);
     margin: 0.5rem 0.5rem 2rem;
 }
+#contact-info p:hover{
+    color: rgb(197, 160, 91);
+    text-shadow: 0 0 2px whitesmoke;
+    border-bottom: 1px solid rgb(197, 160, 91);
+}
+#contact-info a{
+    text-decoration: none;    
+}
 
 #email-sender form{
     display: flex;
@@ -623,7 +679,9 @@ nav #logo{
     background-color: rgb(197, 160, 91);
     color: rgb(22, 18, 18);
 }
-
+#numberFont{
+    font-weight: 700;
+}
 /************map*************/
 #contact-maps{
     display: flex;
@@ -645,6 +703,7 @@ nav #logo{
     z-index: 1;
     animation: insertItem 0.7s linear 1 forwards;
 }
+
 
 /*************footer****************/
 footer div {
