@@ -58,8 +58,8 @@ const renderHomePage = (() => {
         ul.appendChild(li5);
         navMenu.appendChild(ul);
         
-        if(onload){
-         navMenu.style.animation = `navAnimation 0.7s linear 1 forwards` ;  
+        if(onload === true){ // mora ovako jer radi i sa eventom
+            navMenu.style.animation = `navAnimation 0.7s linear 1 forwards` ;  
         }
         
 

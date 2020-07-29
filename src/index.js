@@ -1,5 +1,5 @@
 //TODO efekti
-//TODO google maps dark
+//TODO google maps dark 
 //TODO Home page dodati jos nesto (lokacija, radno vreme, ime restorana)
 //TODO ikonice za fejs, insta gore desno
 

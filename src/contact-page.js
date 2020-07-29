@@ -171,7 +171,9 @@ const renderContactPage = (() => {
         contactMaps.setAttribute('id', 'contact-maps');
         const map = document.createElement('div');
         map.setAttribute('id', 'map');
+        map.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.780206373452!2d-115.15545604177532!3d36.15291516076011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c36183d55c75%3A0x360e9f50b5991491!2sArts%20District%20Kitchen!5e0!3m2!1sen!2srs!4v1596023186728!5m2!1sen!2srs" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
         contactMaps.appendChild(map);
+        
 
         content.appendChild(contactInfo);
         content.appendChild(contactMaps);
@@ -192,6 +194,7 @@ const renderContactPage = (() => {
         li5.classList.add('active');
 
     }
+
 
     return {
         render,
