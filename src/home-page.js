@@ -99,7 +99,46 @@ const renderHomePage = (() => {
        // slogan = document.createElement('h1');
         slogan.setAttribute('id', 'slogan');
         slogan.textContent = 'A TASTY BURGER IS WHAT YOU DESERVE';
+        li3.addEventListener('click', function (){renderMenuPage.render('burgers', true)});
+
+        // location
+        const item1 = document.createElement('div');
+        item1.classList.add('contact-item');
+        const span1 = document.createElement('span');
+        span1.classList.add('icon');
+        const img1 = document.createElement('img');
+        img1.setAttribute('src', './images/contact-page/pin.svg');
+        img1.setAttribute('alt', 'pin icon');
+        span1.appendChild(img1);
+        const p1 = document.createElement('p');
+        p1.innerHTML = `1510 South Main Street<br>
+        Las Vegas, NV 89104 <br>
+        Located in Able Baker Brewing`;
+        item1.appendChild(span1);
+        item1.appendChild(p1);
+        // working time
+        const item2 = document.createElement('div');
+        item2.classList.add('contact-item');
+        const span2 = document.createElement('span');
+        span2.classList.add('icon');
+        const img2 = document.createElement('img');
+        img2.setAttribute('src', './images/contact-page/clock2.svg');
+        img2.setAttribute('alt', 'clock icon');
+        span2.appendChild(img2);
+        const p2 = document.createElement('p');
+        p2.innerHTML = `<strong class="name">Sun-Thurs:</strong> 12pm-9pm <br>
+        <strong class="name">Fri-Sat:</strong> 12pm-11pm <br>`;
+        item2.appendChild(span2);
+        item2.appendChild(p2);
+        const info = document.createElement('div');
+        info.setAttribute('id', 'contact-info');
+        info.classList.add('home-info');
+        info.appendChild(item1);
+        info.appendChild(item2);
+
         content.appendChild(slogan);
+        content.appendChild(info);
+
 
         // footer
         const footer = document.createElement('footer');

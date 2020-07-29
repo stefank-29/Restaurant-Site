@@ -19,14 +19,14 @@ body{
 
 h1{
     font-size: 6rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rowdies', cursive;
     padding: 1.5rem;
     margin: 1rem;
     margin-top: -20rem;
     color: whitesmoke;
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0 0 10px rgb(197, 160, 91);
+    background-color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 8px rgb(197, 160, 91);
     /*box-shadow: 5px 5px 2px 5px rgba(0, 0, 0, 0.2);*/
     animation: insert 0.7s linear 1 forwards;
     cursor: pointer;
@@ -59,10 +59,27 @@ h1{
     width: 100%;
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.home-info{
+    flex-direction: row !important;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1.5rem 1rem 0rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+    animation: insertItem 0.7s linear 1 forwards;
+    width: 70rem !important;
+
+}
+.home-info p{
+    font-size: 2.3rem !important;
+
+}
 
 /************nav*********************/
 #main-nav{
@@ -635,11 +652,13 @@ nav #logo{
     color: whitesmoke;
     text-shadow: 0 0 2px rgb(197, 160, 91);
     margin: 0.5rem 0.5rem 2rem;
+    cursor: default;
 }
-#contact-info p:hover{
+#contact-info a:hover p{
     color: rgb(197, 160, 91);
     text-shadow: 0 0 2px whitesmoke;
     border-bottom: 1px solid rgb(197, 160, 91);
+    cursor: pointer;
 }
 #contact-info a{
     text-decoration: none;    
