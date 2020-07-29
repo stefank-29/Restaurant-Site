@@ -14,7 +14,7 @@ body{
     height: 100%;
     background-image: url('../images/cover4.jpg');
     background-size: cover;
-
+    
 }
 
 h1{
@@ -130,7 +130,7 @@ nav #logo{
 @keyframes navAnimation {
     0%{
         opacity: 0.5;
-        transform: translateY(-50%)
+        transform: translateY(-70%)
     }
     100%{
         opacity: 1;
@@ -629,10 +629,21 @@ nav #logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 70%;
     width: 60%;
-    background-color: red;
-    margin-top: 3rem;
+    /* background-color: red; */
+    margin-top: 10rem;
+    
+}
+#map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(197, 160, 91);
+    box-shadow: 0 0 7px 2px rgba(197, 160, 91, 0.7);
+    border-radius: 5px;
+    z-index: 1;
+    animation: insertItem 0.7s linear 1 forwards;
 }
 
 /*************footer****************/
