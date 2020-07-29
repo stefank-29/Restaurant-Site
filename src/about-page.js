@@ -35,7 +35,7 @@ const renderAboutPage = (() => {
         const li3 = document.createElement('li');
         li3.textContent = 'Menu';
         li3.setAttribute('id', 'menu-li');
-        li3.addEventListener('click', function (){renderMenuPage.render('burgers')});
+        li3.addEventListener('click', function (){renderMenuPage.render('burgers', true)});
         const li4 = document.createElement('li');
         li4.textContent = 'About';
         li4.setAttribute('id', 'about-li');

@@ -221,7 +221,7 @@ nav #logo{
     cursor: pointer;
     padding-top: 2rem;
     margin: 0 0 1rem;
-    animation: insertItem 0.7s linear  1  forwards;
+    animation: insertItem 0.7s linear 1 forwards;
 }
 
 /********img***********/
@@ -447,9 +447,6 @@ nav #logo{
 }
 
 
-
-
-
 /*******************************/
 
 #about-text{
@@ -531,6 +528,7 @@ nav #logo{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    animation: insertItem 0.5s linear 1 forwards;
 }
 #contact-info{
     display: flex;
@@ -542,6 +540,9 @@ nav #logo{
     /* background-color: rgb(91, 91, 207); */
     margin-left: 1rem;
     
+}
+#contact-info *{
+    animation: insertItem 0.8s linear 1 forwards;
 }
 .contact-item{
     display: flex;
@@ -623,6 +624,7 @@ nav #logo{
     color: rgb(22, 18, 18);
 }
 
+/************map*************/
 #contact-maps{
     display: flex;
     align-items: center;
