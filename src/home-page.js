@@ -29,7 +29,6 @@ const renderHomePage = (() => {
         const ul = document.createElement('ul');
         const imgLogo = document.createElement('img');
         imgLogo.setAttribute('src', './images/burger-logo-bg.jpg');
-
         imgLogo.setAttribute('id', 'logo');
         const li1 = document.createElement('li');
         li1.setAttribute('id', 'logo-li');
@@ -89,7 +88,7 @@ const renderHomePage = (() => {
         navMenu.appendChild(social);
            
         if(onload === true){ // mora ovako jer radi i sa eventom
-            navMenu.style.animation = `navAnimation 0.7s linear 1 forwards` ;  
+            navMenu.style.animation = `navAnimation 1s linear 1 forwards` ;  
         }
         
 
@@ -99,7 +98,7 @@ const renderHomePage = (() => {
        // slogan = document.createElement('h1');
         slogan.setAttribute('id', 'slogan');
         slogan.textContent = 'A TASTY BURGER IS WHAT YOU DESERVE';
-        li3.addEventListener('click', function (){renderMenuPage.render('burgers', true)});
+        slogan.addEventListener('click', function (){renderMenuPage.render('burgers', true)});
 
         // location
         const item1 = document.createElement('div');

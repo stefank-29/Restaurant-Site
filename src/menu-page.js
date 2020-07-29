@@ -85,7 +85,7 @@ const renderMenuPage = (() => {
         const content = document.createElement('div');
         content.setAttribute('id', 'menu-content'); 
         if(flag){ // ako sam presao na menu page
-            content.style.animation = `insertItem 0.5s linear  1  forwards`
+            content.style.animation = `insertItem 0.6s linear  1  forwards`
         }   
         
         //menu
