@@ -1,6 +1,3 @@
-//TODO readme
-//TODO TOP
-
 //git subtree push --prefix dist origin gh-pages
 
 
