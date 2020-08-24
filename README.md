@@ -1,5 +1,5 @@
 # Restaurant Site
-Restaurant site built for assignment as part of the curriculum for the JavaScript course on The Odin Project.
+Restaurant site built for assignment as part of the curriculum for the JavaScript course on [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 
 ![Image of project](restaurant.gif)
 
